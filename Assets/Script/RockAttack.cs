@@ -10,7 +10,8 @@ public class RockAttack : MonoBehaviour
     Vector3 dir;
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        player = GameObject.Find("Blue Witch");
         StartCoroutine(FinePlayer());
         //sdir = (player.transform.position - transform.position).normalized;
         StartCoroutine(Move());
@@ -38,7 +39,7 @@ public class RockAttack : MonoBehaviour
     IEnumerator FinePlayer()
     {
         //yield return new WaitForSeconds(1.5f);
-        player = GameObject.Find("Blue Witch");
+        //player = GameObject.Find("Blue Witch");
         dir = (player.transform.position - transform.position).normalized;
         yield return new WaitForSeconds(0.5f);
         
