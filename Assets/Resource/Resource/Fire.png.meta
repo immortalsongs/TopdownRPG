@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b2bf2204bc91f5343b20c485b29a97c2
+guid: 960771f608b0942448b09f69e0fcc7f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,55 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainLev2.0_0
+      name: Fire_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f6aa7598fe93bc4b860d7803ccb8b88
-      internalID: -698453109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainLev2.0_1
-      rect:
-        serializedVersion: 2
-        x: 1410
-        y: 44
-        width: 158
-        height: 165
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30eb551f8474b27429bade22bc14459e
-      internalID: -1796400586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MainLev2.0_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 1261
-        width: 188
-        height: 275
+        x: 0
+        y: 1
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbda78eab90f9e641b116f81a64ce702
-      internalID: 918703301
+      spriteID: 5b40785cd9c7ad7428d9cf978fafa591
+      internalID: -463716002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainLev2.0_3
+      name: Fire_1
       rect:
         serializedVersion: 2
-        x: 349
-        y: 1135
-        width: 100
-        height: 121
+        x: 19
+        y: 2
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e64a8ef638cdabc43bf19ba19d4f1bce
-      internalID: -903397021
+      spriteID: ac0a19faa4133324c883b0d44ae40626
+      internalID: 1715311408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MainLev2.0_4
+      name: Fire_2
       rect:
         serializedVersion: 2
-        x: 217
-        y: 1135
-        width: 108
-        height: 121
+        x: 38
+        y: 2
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +196,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06af190a16bb9324999f4e6672959459
-      internalID: -1254521693
+      spriteID: 6670c470e61cdcc4cb8b64abde488fc0
+      internalID: -1286362847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106ce1894333e3d489609539c868097c
+      internalID: 2083814229
       vertices: []
       indices: 
       edges: []
@@ -255,11 +234,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MainLev2.0_0: -698453109
-      MainLev2.0_4: -1254521693
-      MainLev2.0_3: -903397021
-      MainLev2.0_2: 918703301
-      MainLev2.0_1: -1796400586
+      Fire_1: 1715311408
+      Fire_2: -1286362847
+      Fire_3: 2083814229
+      Fire_0: -463716002
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

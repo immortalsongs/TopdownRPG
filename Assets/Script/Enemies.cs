@@ -28,6 +28,7 @@ public class Enemies : MonoBehaviour
         {
             WaterAttack temp = collision.gameObject.GetComponent<WaterAttack>();
             hp -= temp.Damage;
+            GameManager.instance.Hit(transform.position);
         }
     }
 

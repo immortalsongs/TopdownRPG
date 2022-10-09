@@ -17,7 +17,7 @@ public class Goblin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log((player.transform.position - transform.position).magnitude);
+        //  Debug.Log((player.transform.position - transform.position).magnitude);
         if((player.transform.position-transform.position).magnitude<15)
         {
             chaAni.SetBool("attack", true);

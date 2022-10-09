@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Move
+  m_Name: Lightning
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2132461540, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - time: 0.25
-      value: {fileID: 608078022, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - time: 0.41666666
-      value: {fileID: 812042906, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - time: 0.6666667
-      value: {fileID: -2051587088, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
+      value: {fileID: -715576442, guid: d575938ef0a85e6428053abcdafdf92b, type: 3}
+    - time: 0.16666667
+      value: {fileID: 1242532646, guid: d575938ef0a85e6428053abcdafdf92b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,21 +42,19 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2132461540, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - {fileID: 608078022, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - {fileID: 812042906, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
-    - {fileID: -2051587088, guid: 0475ef977cd5f134c8c90863b759b2ad, type: 3}
+    - {fileID: -715576442, guid: d575938ef0a85e6428053abcdafdf92b, type: 3}
+    - {fileID: 1242532646, guid: d575938ef0a85e6428053abcdafdf92b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -74,4 +68,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: DestroyObject
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
