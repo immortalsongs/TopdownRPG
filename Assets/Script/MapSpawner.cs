@@ -19,13 +19,13 @@ public class MapSpawner : MonoBehaviour
         if(Mathf.Abs(transform.position.x-player.transform.position.x)>=10)
         {
             
-            Instantiate(GroundX, player.transform.position+new Vector3(22 * -((transform.position.x - player.transform.position.x) / Mathf.Abs(transform.position.x - player.transform.position.x)), 0,0), Quaternion.identity);
+            Instantiate(GroundX, player.transform.position+new Vector3(22 * -((transform.position.x - player.transform.position.x) / Mathf.Abs(transform.position.x - player.transform.position.x)), 0,8), Quaternion.identity);
             transform.position = player.transform.position;
         }
         if (Mathf.Abs(transform.position.y - player.transform.position.y) >= 10)
         {
 
-            Instantiate(GroundY, player.transform.position + new Vector3(0, 22 * -((transform.position.y - player.transform.position.y) / Mathf.Abs(transform.position.y - player.transform.position.y)), 0), Quaternion.identity);
+            Instantiate(GroundY, player.transform.position + new Vector3(0, 22 * -((transform.position.y - player.transform.position.y) / Mathf.Abs(transform.position.y - player.transform.position.y)), 8), Quaternion.identity);
             transform.position = player.transform.position;
         }
     }

@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.35
-  hp: 700
+  hp: 5000
 --- !u!50 &4230803966664384131
 Rigidbody2D:
   serializedVersion: 4

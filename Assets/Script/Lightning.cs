@@ -6,6 +6,7 @@ public class Lightning : MonoBehaviour
 {
     public static Lightning instance;
     public GameObject lightning;
+    public float Damage = 100f;
 
     // Start is called before the first frame update
     void Start()

@@ -6,6 +6,7 @@ public class Enemies : MonoBehaviour
 {
     public float speed;
     public float hp;
+    bool isRotate=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,21 @@ public class Enemies : MonoBehaviour
     {
         GameObject player = GameObject.Find("Blue Witch");
         transform.Translate((player.transform.position - transform.position) * speed*Time.deltaTime);
-        if(hp<=0)
+        if (transform.position.x < player.transform.position.x)
+        {
+            if (isRotate == false)
+            {
+                transform.Rotate(new Vector3(0, 180f, 0));
+                isRotate = !isRotate;
+            }
+        }
+        else if (isRotate)
+        {
+            transform.Rotate(new Vector3(0, 180f, 0));
+            isRotate = !isRotate;
+        }
+
+        if (hp<=0)
         {
             Destroy(gameObject);
         }
@@ -28,7 +43,7 @@ public class Enemies : MonoBehaviour
         {
             WaterAttack temp = collision.gameObject.GetComponent<WaterAttack>();
             hp -= temp.Damage;
-            GameManager.instance.Hit(transform.position);
+            GameManager.instance.Hit(this);
         }
     }
 

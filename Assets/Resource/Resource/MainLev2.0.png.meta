@@ -190,7 +190,7 @@ TextureImporter:
         width: 188
         height: 275
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,7 +211,7 @@ TextureImporter:
         width: 100
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,7 +232,7 @@ TextureImporter:
         width: 108
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,6 +240,132 @@ TextureImporter:
       bones: []
       spriteID: 06af190a16bb9324999f4e6672959459
       internalID: -1254521693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7495155cdd4a34dbc92d123d93ce99
+      internalID: -123349912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 63
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f10074a23218e43ab035ff8ce21519
+      internalID: -1851588540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 885
+        width: 125
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f0e45c5a6403746a7037d01b86b311
+      internalID: 1528361132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 895
+        width: 64
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924cfdab45090b9469a2d5537f358dc4
+      internalID: -522381208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 842
+        width: 165
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f632720e197f747879feed08368a34
+      internalID: 2020827644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainLev2.0_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 929
+        width: 121
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcbdb3c74dc95040b6031b4a94f0cd5
+      internalID: 987716099
       vertices: []
       indices: 
       edges: []
@@ -255,10 +381,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      MainLev2.0_5: -123349912
+      MainLev2.0_8: -522381208
+      MainLev2.0_9: 2020827644
       MainLev2.0_0: -698453109
       MainLev2.0_4: -1254521693
+      MainLev2.0_6: -1851588540
+      MainLev2.0_7: 1528361132
       MainLev2.0_3: -903397021
       MainLev2.0_2: 918703301
+      MainLev2.0_10: 987716099
       MainLev2.0_1: -1796400586
   spritePackingTag: 
   pSDRemoveMatte: 0

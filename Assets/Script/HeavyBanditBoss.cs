@@ -11,6 +11,7 @@ public class HeavyBanditBoss : MonoBehaviour
     Enemies self;
     float count = 3f;
     public Animator chaAni;
+    GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,19 +23,28 @@ public class HeavyBanditBoss : MonoBehaviour
     void Update()
     {
         count -= Time.deltaTime;
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag=="Player")
+        if (count < 0)
         {
-            if (count < 0)
+            player = GameObject.Find("Blue Witch");
+            if ((player.transform.position - transform.position).magnitude < 12f)
             {
                 chaAni.SetBool("attack", true);
-                StartCoroutine(MoveObject(collision.transform.position, 0.6f));
+                StartCoroutine(MoveObject(player.transform.position, 0.6f));
             }
         }
     }
+
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if(collision.gameObject.tag=="Player")
+    //    {
+    //        if (count < 0)
+    //        {
+    //            chaAni.SetBool("attack", true);
+    //            StartCoroutine(MoveObject(collision.transform.position, 0.6f));
+    //        }
+    //    }
+    //}
     public IEnumerator MoveObject(Vector3 targetPos, float duration)
     {
         self.speed = 0;
