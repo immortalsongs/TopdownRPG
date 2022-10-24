@@ -8,18 +8,24 @@ public class WaterAttack : MonoBehaviour
     public float lifeTine=5;
     public float Damage = 100;
     public Rigidbody2D rb;
+    public float Pierce;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //rb = GetComponent<Rigidbody2D>();
         //Spawn();
+        Damage = 10f;
     }
-
+    private void Start()
+    {
+        Pierce = GameManager.instance.Piercing;
+    }
     // Update is called once per frame
     void Update()
     {
+
         lifeTine -= Time.deltaTime;
-        if (lifeTine < 0) Destroy(gameObject);
+        if (lifeTine < 0 || Pierce<0) Destroy(gameObject);
     }
     //void Spawn()
     //{
