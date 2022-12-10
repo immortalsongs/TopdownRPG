@@ -16,9 +16,14 @@ public class Boomer : MonoBehaviour
     void Update()
     {
         player = GameObject.Find("Blue Witch");
-        if ((player.transform.position - transform.position).magnitude < 12f)
+        if ((player.transform.position - transform.position).magnitude < 4f)
         {
             chaAni.SetBool("attack", true);
         }
+    }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }
