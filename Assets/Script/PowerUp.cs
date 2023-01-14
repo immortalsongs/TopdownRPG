@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class PowerUp : ScriptableObject
 {
+    public Sprite artwork;
     public abstract void Apply();
 }

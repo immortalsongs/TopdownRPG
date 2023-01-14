@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -41,12 +42,14 @@ public class GameManager : MonoBehaviour
     public bool Reaper=false;
     public bool assassin = false;
 
+    public GameObject Pause;
+
     // Start is called before the first frame update
     void Start()
     {
         lightning = false;
         fire = false;
-        Spliter = true;
+        //Spliter = true;
         instance = this;
         //AffectDamage(100);
     }
@@ -54,7 +57,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void Hit(Enemies go)
@@ -191,5 +198,21 @@ public class GameManager : MonoBehaviour
         {
             Destroy(go.gameObject);
         }
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainGameplay");
+        Time.timeScale = 1;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1;
     }
 }

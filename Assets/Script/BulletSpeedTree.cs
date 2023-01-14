@@ -18,6 +18,7 @@ public class BulletSpeedTree : PowerUp
     public override void Apply()
     {
         GameManager.instance.AffectBulletSpeed(BulletSpeed).AffectAttackSpeed(FireRate).AffectKnockback(Knockback).AffectPiercing(Pierce).AffectDamage(BulletDamage);
-        effect.ApplyEffect();
+        if (effect != null)
+            effect.ApplyEffect();
     }
 }

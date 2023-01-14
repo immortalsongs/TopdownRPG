@@ -123,6 +123,7 @@ MonoBehaviour:
   speed: 0.05
   BaseHp: 0
   hp: 200
+  EXP: {fileID: 4491359254867547682, guid: 31c7c2b164f14274cb938d413710e006, type: 3}
 --- !u!50 &9089446125974181981
 Rigidbody2D:
   serializedVersion: 4

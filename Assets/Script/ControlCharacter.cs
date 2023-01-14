@@ -19,7 +19,7 @@ public class ControlCharacter : MonoBehaviour
     public Animator animator;
     public Camera mainCamera;
 
-
+    public GameObject DeadTXT;
 
     Vector3 MousePos;
     float angle;
@@ -28,6 +28,7 @@ public class ControlCharacter : MonoBehaviour
     BoxCollider2D box;
 
     public float HP;
+    public SpriteRenderer[] hp;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class ControlCharacter : MonoBehaviour
         }
     }
 
+
     public void Attack()
     {
         if (bulletCount > 0)
@@ -97,12 +99,24 @@ public class ControlCharacter : MonoBehaviour
 
     public void GetHit()
     {
+        HP--;
+        hp[(int)HP].color = Color.black;
         animator.SetBool("hit", true);
         box.enabled = false;
+        if(HP<=0)
+        {
+            Dead();
+        }
     }
     public void AfterHit()
     {
         animator.SetBool("hit", false);
         box.enabled = true;
+    }
+
+    public void Dead()
+    {
+        DeadTXT.SetActive(true);
+        Time.timeScale = 0;
     }
 }

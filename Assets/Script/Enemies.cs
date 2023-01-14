@@ -8,10 +8,11 @@ public class Enemies : MonoBehaviour
     public float BaseHp;
     public float hp;
     bool isRotate=false;
+
+    public GameObject EXP;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class Enemies : MonoBehaviour
 
         if (hp<=0)
         {
+            Instantiate(EXP, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

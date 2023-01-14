@@ -9,14 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 157861d216517a0479858ace1a9bc264, type: 3}
+  m_Script: {fileID: 11500000, guid: 474b0e0dc2573bb4db73b52dcc715ba6, type: 3}
   m_Name: Assassin
   m_EditorClassIdentifier: 
-  artwork: {fileID: 0}
-  Name: Assassin
-  BulletSpeed: 25
-  FireRate: 0
-  Knockback: 0
-  Pierce: 0
-  BulletDamage: 0
-  effect: {fileID: 11400000, guid: 009b9cbc592822c4f970dc2740e518bd, type: 2}
+  Effect: Assassin

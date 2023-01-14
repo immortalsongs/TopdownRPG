@@ -12,5 +12,7 @@ public class Reaper : Effect
             GameManager.instance.Reaper = true;
         if(Effect=="Spliter")
             GameManager.instance.Spliter = true;
+        if (Effect == "Assassin")
+            GameManager.instance.assassin = true;
     }
 }
